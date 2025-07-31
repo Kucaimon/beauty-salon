@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Эстетика лица | Кабинет косметологии</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/gallery.css" />
+  </head>
+  <body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <div class="logo-container">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Логотип" class="logo" />
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Фото</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reviews.html">Отзывы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="gallery-section">
+      <div class="container">
+        <p class="intro-text text-center mb-5">
+          На этой странице вы можете ознакомиться с
+          <span class="gold-underline">реальными работами</span> из бьюти-студии
+          <strong>"Эстетика лица" Натальи Герасимовой</strong> в Геленджике. Мы
+          собрали для вас
+          <span class="gold-underline">фото до и после</span> популярных
+          процедур: перманентный макияж бровей, губ, век, пилинги, чистка лица и
+          другие услуги эстетической косметологии.
+        </p>
+
+        <!-- Табы для фильтрации -->
+        <ul class="nav nav-tabs gallery-tabs" id="galleryTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="all-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#all"
+              type="button"
+            >
+              Все работы
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="brows-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#brows"
+              type="button"
+            >
+              Брови
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="lips-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#lips"
+              type="button"
+            >
+              Губы
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="peeling-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#peeling"
+              type="button"
+            >
+              Пилинги
+            </button>
+          </li>
+        </ul>
+
+        <!-- Контент табов -->
+        <div class="tab-content" id="galleryTabContent">
+          <!-- Все работы -->
+          <div class="tab-pane fade show active" id="all" role="tabpanel">
+            <div class="gallery-grid">
+              <!-- Пример 1 -->
+              <div class="gallery-item before-after">
+                <img src="images/work7.jpeg" />
+                alt="Перманентный макияж бровей до" />
+                <img src="images/work7.jpeg" />
+                alt="Перманентный макияж бровей после" />
+                <div class="gallery-caption">
+                  <h3>Пудровые брови</h3>
+                  <p>Эффект мягкой теневой прорисовки</p>
+                </div>
+              </div>
+
+              <!-- Пример 2 -->
+              <div class="gallery-item before-after">
+                <img src="images/work5.jpeg" alt="Татуаж губ до" />
+                <img src="images/work5.jpeg" />
+                alt="Татуаж губ после" />
+                <div class="gallery-caption">
+                  <h3>Акварельный татуаж губ</h3>
+                  <p>Эффект градиента и объёма</p>
+                </div>
+              </div>
+
+              <!-- Пример 3 -->
+              <div class="gallery-item before-after">
+                <img src="images/work1.jpeg" alt="Пилинг до" />
+                <img src="images/work1.jpeg" />
+                alt="Пилинг после" />
+                <div class="gallery-caption">
+                  <h3>Всесезонный пилинг</h3>
+                  <p>Выравнивание тона кожи</p>
+                </div>
+              </div>
+
+              <!-- Добавьте остальные работы аналогично -->
+            </div>
+          </div>
+
+          <!-- Брови -->
+          <div class="tab-pane fade" id="brows" role="tabpanel">
+            <div class="gallery-grid">
+              <!-- Пример для бровей -->
+              <div class="gallery-item before-after">
+                <img
+                  src="images/work7.jpeg"
+                  alt="Перманентный макияж бровей до"
+                />
+                <div class="gallery-caption">
+                  <h3>Пудровые брови</h3>
+                  <p>Эффект макияжа карандашом</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Губы -->
+          <div class="tab-pane fade" id="lips" role="tabpanel">
+            <div class="gallery-grid">
+              <!-- Пример для губ -->
+              <div class="gallery-item before-after">
+                <img src="images/work5.jpeg" alt="Татуаж губ до" />
+                <img src="images/work5.jpeg" alt="Татуаж губ после" />
+                <div class="gallery-caption">
+                  <h3>Акварельный татуаж губ</h3>
+                  <p>Здоровый цвет и объём</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Пилинги -->
+          <div class="tab-pane fade" id="peeling" role="tabpanel">
+            <div class="gallery-grid">
+              <!-- Пример для пилингов -->
+              <div class="gallery-item before-after">
+                <img src="images/work1.jpeg" alt="Пилинг до" />
+                <img src="images/work1.jpeg" alt="Пилинг после" />
+                <div class="gallery-caption">
+                  <h3>Всесезонный пилинг</h3>
+                  <p>Осветление и выравнивание кожи</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Описание процедур -->
+        <div class="row mt-5">
+          <div class="col-lg-6">
+            <h3>
+              <i class="fas fa-eye text-gold me-2"></i> Перманентный макияж
+            </h3>
+            <p>Наши ключевые специализации:</p>
+            <ul>
+              <li>
+                <strong>Пудровые брови</strong> — эффект мягкой теневой
+                прорисовки, как после макияжа карандашом.
+              </li>
+              <li>
+                <strong>Акварельный татуаж губ</strong> — нежное окрашивание с
+                эффектом градиента.
+              </li>
+              <li>
+                <strong>Межресничный татуаж</strong> — визуально увеличивает
+                глаза без туши.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h3><i class="fas fa-spa text-gold me-2"></i> Косметология</h3>
+            <p>Примеры наших процедур:</p>
+            <ul>
+              <li>
+                <strong>Пилинги</strong> (всесезонный, желтый, PQ AGE) —
+                осветляют кожу и выравнивают тон.
+              </li>
+              <li>
+                <strong>Механическая чистка лица</strong> с косметикой
+                Angiopharm и Cristina.
+              </li>
+              <li>
+                <strong>Коллагеновое омоложение</strong> с препаратом Nithya
+                (Италия).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Кнопка CTA -->
+        <div class="text-center">
+          <a href="contacts.html" class="cta-button">
+            <span class="cta-text">Записаться на консультацию</span>
+            <span class="cta-icon">
+              <i class="fas fa-calendar-check"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-about">
+              <span class="footer-logo">
+                <img src="images/logo.png" alt="Логотип" class="footer__logo" />
+              </span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-links">
+              <h4>Меню</h4>
+              <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Фото работ</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-links">
+              <h4>Услуги</h4>
+              <ul>
+                <li><a href="#services">Косметология</a></li>
+                <li><a href="#services">Перманентный макияж</a></li>
+                <li><a href="#services">Уход за кожей</a></li>
+                <li><a href="#services">Консультации</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-contact">
+              <h4>Контакты</h4>
+              <div class="contact-info">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Геленджик, ул. Островского, 10, этаж 3</span>
+              </div>
+              <div class="contact-info">
+                <i class="fas fa-phone"></i>
+                <a
+                  href="tel:+79616984559"
+                  style="color: var(--medium-gray); text-decoration: none"
+                  >+7 (961) 698-45-59</a
+                >
+              </div>
+              <div class="contact-info">
+                <i class="fas fa-clock"></i>
+                <span>Пн-Пт: 09:00 - 21:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2025 Эстетика Лица. Все права защищены.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <p>
+                Разработано с
+                <i class="fas fa-heart" style="color: var(--gold)"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Активация табов галереи
+      const galleryTabs = document.querySelectorAll("#galleryTabs button");
+      galleryTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          galleryTabs.forEach((t) => t.classList.remove("active"));
+          tab.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

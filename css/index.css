@@ -1,0 +1,259 @@
+:root {
+  --primary-black: #1a1a1a;
+  --secondary-black: #2d2d2d;
+  --light-gray: #f5f5f5;
+  --medium-gray: #888888;
+  --dark-gray: #404040;
+  --gold: #d4af37;
+  --gold-dark: #b8941f;
+  --gold-light: #f4e4a6;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--light-gray);
+  background-color: var(--primary-black);
+  padding-top: 80px;
+}
+
+/* Навигация */
+.navbar {
+  background-color: var(--primary-black) !important;
+  padding: 15px 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 20px rgba(212, 175, 55, 0.1);
+}
+
+.navbar a:hover {
+  color: var(--gold);
+}
+
+.logo {
+  height: 50px;
+  transition: all 0.3s ease;
+}
+
+/* Hero секция */
+.hero {
+  max-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--primary-black) 0%,
+    var(--secondary-black) 100%
+  );
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--light-gray);
+  margin-bottom: 20px;
+}
+
+.hero .highlight {
+  color: var(--gold);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--medium-gray);
+  margin-bottom: 30px;
+}
+
+.hero img {
+  width: 100%;
+  height: 100vh;
+}
+
+.btn-gold {
+  background: linear-gradient(45deg, var(--gold-dark), var(--gold));
+  color: var(--primary-black);
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+  color: var(--primary-black);
+}
+
+/* Секция услуг */
+.services-section {
+  padding: 80px 0;
+  background: var(--secondary-black);
+}
+
+.service-card {
+  background: var(--primary-black);
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  border: 1px solid var(--dark-gray);
+  transition: all 0.3s;
+}
+
+.service-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-5px);
+}
+
+.price {
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(45deg, var(--gold-dark), var(--gold));
+  color: var(--primary-black);
+  padding: 16px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.4s;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+  color: var(--primary-black);
+}
+
+.cta-button:active {
+  transform: translateY(1px);
+}
+
+.cta-icon {
+  margin-left: 12px;
+  font-size: 1.3rem;
+  transition: transform 0.3s;
+}
+
+.cta-button:hover .cta-icon {
+  transform: translateX(5px);
+}
+
+/* Анимация "пульсации" */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(212, 175, 55, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+  }
+}
+
+.cta-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  animation: pulse 2s infinite;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .cta-button {
+    padding: 14px 30px;
+    font-size: 1.1rem;
+  }
+
+  .hero img {
+    height: 50vh;
+  }
+}
+
+/* Футер */
+.footer {
+  background-color: var(--secondary-black);
+  padding: 60px 0 30px;
+  border-top: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.footer__logo {
+  width: 50%;
+}
+
+.footer-links h4 {
+  color: var(--gold);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-links h4::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--medium-gray);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+.contact-info {
+  color: var(--medium-gray);
+  margin-bottom: 15px;
+}
+
+.contact-info i {
+  color: var(--gold);
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.copyright {
+  border-top: 1px solid var(--dark-gray);
+  padding-top: 20px;
+  margin-top: 40px;
+  color: var(--medium-gray);
+  font-size: 0.9rem;
+}
+
+/* Адаптив */
+@media (max-width: 992px) {
+  .footer-links {
+    margin-bottom: 30px;
+  }
+}
